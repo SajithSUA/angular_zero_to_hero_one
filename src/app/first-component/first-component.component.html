@@ -1,7 +1,13 @@
 <div>
   <!-- for loop -->
-  <ul *ngFor="let person of userDetails">
-    <li>{{ person.name }}</li>
-    <li>{{ person.phoneNo }}</li>
+  <ul *ngFor="let person of userDetails" class="card">
+    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Name:- {{person.name}}</b></h4>
+      <p>Phone Number:- {{person.phoneNo}}</p>
+    </div>
+
+    <!-- how to pass variables in to event bind -->
+    <button (click)="removeUser(person.name)">Remove Me!</button>
   </ul>
 </div>

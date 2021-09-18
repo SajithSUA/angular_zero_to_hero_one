@@ -1,21 +1,21 @@
 <div>
 
   <!-- Example of Interpolation -->
-  <h1>
+  <h1 style="text-align: center;">
     {{appName}}
   </h1>
 
 
   <div>
-    <label>User Name :- </label>
+    <label for="fname">User Name :- </label>
     <!-- two way binding (we want to import FormModule) -->
-    <input (keypress) = "validate()" [(ngModel)]="userName" />
+    <input type="text" (keypress) = "validate()" [(ngModel)]="userName" />
 
     <br>
 
-    <label>Phone Number :- </label>
+    <label for="fname">Phone Number :- </label>
     <!-- two way binding   (we want to import FormModule)-->
-    <input (keypress) = "validate()" [(ngModel)]="phoneNumber" />
+    <input type="text" (keypress) = "validate()" [(ngModel)]="phoneNumber" />
   </div>
 
   <!-- property binding ("disabled" is a property of html button)  -->
@@ -25,13 +25,13 @@
 
 
    <!-- for loop -->
-   <ul *ngFor="let person of users">
+
+   <!-- <ul *ngFor="let person of users">
     <li>{{ person.name }}</li>
     <li>{{ person.phoneNo }}</li>
-  </ul>
+  </ul> -->
 
-
+</div>
   <!-- property binding with other compoent  -->
   <app-first-component [userDetails] = "users"></app-first-component>
 
-</div>

@@ -14,8 +14,22 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+## Command 
+npm install -g @angular/cli  ---> Install Angular cli
+
+npm clean install --> Install Node Module 
+
+ng serve --> Run Angular Project
 
 
 
+## Content
+1. Angular Data binding
+		Interpolation
+		property binding
+		two way binding
+		
+2.Anglar For loop and If condition
 
-
+3.Data communication Between Parent to child component
+ 
